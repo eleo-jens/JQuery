@@ -3,6 +3,7 @@ window.onload = function (){
         let $value = $('input#item').val();
         $('p').remove();
         $('input').val("");
+        //if ($value.trim().length > 0)
         if ($value != "" && ($value.trim().length === 0) == false){
             $(`<li>${$value}</li>`).appendTo($('ul'));
         }
@@ -12,3 +13,11 @@ window.onload = function (){
         }
     });
 };
+
+/* Chainage en JS
+let text = "Hello world!"
+let modified_text = text.replace('o','0')
+                        .slice(0,5)
+                        .concat('!')
+                        .replace('l','1');
+*/
