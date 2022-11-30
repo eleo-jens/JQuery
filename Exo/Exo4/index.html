@@ -13,20 +13,23 @@
        <h1>Descriptif produit</h1>
         <table>
             <tbody>
-                <tr>
+                <tr id="1">
                     <td>Chaise</td>
                     <td>25</td>
-                    <td><button>Ajouter</button></td>
+                    <td><button id="ajouter">Ajouter</button></td>
+                    <td><button id="retirer">Retirer</button></td>
                 </tr>
-                <tr>
+                <tr id="2">
                     <td>Table</td>
                     <td>150</td>
                     <td><button>Ajouter</button></td>
+                    <td><button>Retirer</button></td>
                 </tr>
-                <tr>
+                <tr id="3">
                     <td>Meuble TV</td>
                     <td>250</td>
                     <td><button>Ajouter</button></td>
+                    <td><button>Retirer</button></td>
                 </tr>
             </tbody>
         </table>
@@ -38,7 +41,7 @@
 
             </table>
         </div>
-        <label for="prix">Prix total: </label><input type="number" name="total" id="prix" placeholder="0" disabled>
+        <label for="prix">Prix total: </label><input type="number" name="total" id="prix" value="0" disabled>
     </div>
 </body>
 </html>

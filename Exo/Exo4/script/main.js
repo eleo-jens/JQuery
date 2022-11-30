@@ -1,5 +1,5 @@
 let $total = 0;
-$('button').each(function(){
+$('button#ajouter').each(function(){
     $(this).on("click", function (event) {
         
         let $row = $(event.target).parent().parent();
